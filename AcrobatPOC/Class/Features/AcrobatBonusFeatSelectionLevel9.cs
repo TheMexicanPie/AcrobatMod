@@ -47,7 +47,8 @@ namespace AcrobatPOC.Class.Features
                         FeatureRefs.DisarmingStrike.Reference.Get(),
                         FeatureRefs.FurysFall.Reference.Get()
                     ])
-                    .SetRanks(3);
+                    //.SetRanks(3)
+                    ;
                 
                 // Check for prerequisite feats before adding the next ones to the list.   
 

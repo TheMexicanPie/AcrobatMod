@@ -53,6 +53,7 @@ namespace AcrobatPOC.Class
                 .SetIsClassFeature(true)
                 //.SetRanks(1)
                 .SetLevelEntries(entries)
+                .AddToUIGroups("A735C5B7-6328-4442-A7F2-8F32D00ED6F8", "568C3AE8-9EF4-4505-A6C9-82D3635736B7")
                 .Configure();
         }
           

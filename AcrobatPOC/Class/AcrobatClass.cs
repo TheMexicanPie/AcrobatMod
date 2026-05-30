@@ -63,6 +63,7 @@ namespace AcrobatPOC.Class
                 .SetRecommendedAttributes(Kingmaker.EntitySystem.Stats.StatType.Dexterity)
                 .SetNotRecommendedAttributes(Kingmaker.EntitySystem.Stats.StatType.Strength)
                 .SetSignatureAbilities()
+               
                 ;
 
             BlueprintCharacterClass cclass = x.Configure();

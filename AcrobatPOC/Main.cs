@@ -52,7 +52,7 @@ public static class Main {
                 Log.Log("Patching blueprints.");
 
                 //TestFeat.Configure();
-                AcrobatProficiency.Configure();
+                AcrobatProficiency.Configure(FactOwner);
                 AcrobatBonusFeatSelectionLevel1.Configure();
                 AcrobatBonusFeatSelectionLevel9.Configure();
                 ManeuverMastery.Configure();
