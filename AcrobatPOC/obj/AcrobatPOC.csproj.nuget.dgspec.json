@@ -1,0 +1,85 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\SteamLibrary\\steamapps\\common\\Pathfinder Second Adventure\\Mods\\AcrobatPOCProject\\AcrobatPOC\\AcrobatPOC.csproj": {}
+  },
+  "projects": {
+    "D:\\SteamLibrary\\steamapps\\common\\Pathfinder Second Adventure\\Mods\\AcrobatPOCProject\\AcrobatPOC\\AcrobatPOC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\SteamLibrary\\steamapps\\common\\Pathfinder Second Adventure\\Mods\\AcrobatPOCProject\\AcrobatPOC\\AcrobatPOC.csproj",
+        "projectName": "AcrobatPOC",
+        "projectPath": "D:\\SteamLibrary\\steamapps\\common\\Pathfinder Second Adventure\\Mods\\AcrobatPOCProject\\AcrobatPOC\\AcrobatPOC.csproj",
+        "packagesPath": "C:\\Users\\l.richard\\.nuget\\packages\\",
+        "outputPath": "D:\\SteamLibrary\\steamapps\\common\\Pathfinder Second Adventure\\Mods\\AcrobatPOCProject\\AcrobatPOC\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\l.richard\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net481"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net481": {
+            "targetAlias": "net481",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net481": {
+          "targetAlias": "net481",
+          "dependencies": {
+            "BepInEx.AssemblyPublicizer.MSBuild": {
+              "include": "Build, ContentFiles",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[0.4.2, )"
+            },
+            "ILRepack.MSBuild.Task": {
+              "target": "Package",
+              "version": "[2.*, )"
+            },
+            "MicroUtils.HarmonyAnalyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[*-*, )"
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.2, )"
+            },
+            "WW-Blueprint-Core": {
+              "target": "Package",
+              "version": "[*-*, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.314\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

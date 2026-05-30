@@ -1,0 +1,50 @@
+[
+    {
+        "Key": "TestFeat.Name",
+        "ProcessTemplates": false,
+        "enGB": "Test Feat"
+    },
+
+    {
+        "Key": "TestFeat.Description",
+        "enGB": "This is a test feat, how very jank."
+    },
+
+    {
+        "Key": "AcrobatClass.Name",
+        "ProcessTemplates": false,
+        "enGB": "Acrobat"
+    },
+
+    {
+        "Key": "AcrobatClass.Description",
+        "enGB": "Acrobats are people who learned that the easiest way through life is rarely the most direct, and that flexibility and quick thinking are the most important things to stay alive in dire situations. While they generally prefer to rely on their skills and natural charisma to avoid confrontation when possible, acrobats are capable fighters. The acrobats signature fighting style tends to favor disrupting their opponents rather than simply overpowering them, which reflects their intricate lifestyles and distaste for directness."
+    },
+
+    {
+        "Key": "AcrobatClass.DescriptionShort",
+        "enGB": "Acrobats are masters of combat maneuvers and excel at applying different conditions on enemies. They are lightly armored but are able to easily position themselves to avoid being targeted and are agile enough to avoid some hits coming their way."
+    },
+
+    {
+        "Key": "AcrobatProficiencyFeature.Name",
+        "ProcessTemplates": false,
+        "enGB": "Acrobat Proficiencies"
+    },
+
+    {
+        "Key": "AcrobatProficiencyFeature.Description",
+        "enGB": "An acrobat is proficient with all simple weapons plus the flail, heavy flail, two-bladed sword and nuchaku. When using one of these extra weapons or a quarterstaff, the acrobat can treat them as light weapons for the purpose of using Weapon Finesse. They are proficient with light armor, but not with shields."
+    },
+
+    {
+        "Key": "AcrobatBonusFeatSelection.Name",
+        "ProcessTemplates": false,
+        "enGB": "Bonus Maneuver Feat"
+    },
+
+    {
+        "Key": "AcrobatBonusFeatSelection.Description",
+        "enGB": "At 2nd level, and every 4th level afterwards, an acrobat gains a bonus feat in addition to those gained from normal advancement. These bonus feats must be selected from those listed as Combat Maneuver Feats. The acrobat can select a bonus feat even if they do not meet its attribute or feat requirements."
+    }
+]

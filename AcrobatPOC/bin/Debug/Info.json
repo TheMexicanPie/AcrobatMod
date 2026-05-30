@@ -1,0 +1,12 @@
+﻿{
+  "Id": "AcrobatPOC",
+  "DisplayName": "Acrobat Class",
+  "Author": "",
+  "Version": "1.0.0",
+  "ManagerVersion": "0.27.11",
+  "Requirements": [],
+  "AssemblyName": "AcrobatPOC.dll",
+  "EntryMethod": "AcrobatPOC.Main.Load",
+  "HomePage": "",
+  "Repository": ""
+}
