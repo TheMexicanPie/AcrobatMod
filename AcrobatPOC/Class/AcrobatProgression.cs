@@ -25,6 +25,14 @@ namespace AcrobatPOC.Class
                 "7C8B00CA-69D9-4F14-957B-1D9542A204DB" // Maneuver Mastery
                 )
                 .AddEntry
+                (2,
+                "95F5A426-8B4D-4F1D-AE7E-0B0C8813CC5F" //Specialty Maneuver
+                )
+                .AddEntry
+                (3,
+                FeatureRefs.Evasion.Reference.Get()
+                )
+                .AddEntry
                 (5,
                 "A735C5B7-6328-4442-A7F2-8F32D00ED6F8", // Bonus Maneuver Feat 1
                 "7C8B00CA-69D9-4F14-957B-1D9542A204DB" // Maneuver Mastery
@@ -35,6 +43,14 @@ namespace AcrobatPOC.Class
                 "7C8B00CA-69D9-4F14-957B-1D9542A204DB" // Maneuver Mastery
                 )
                 .AddEntry
+                (11,
+                FeatureRefs.ImprovedEvasion.Reference.Get()
+                )
+                .AddEntry
+                (10,
+                "95F5A426-8B4D-4F1D-AE7E-0B0C8813CC5F" //Specialty Maneuver
+                )
+                .AddEntry
                 (13,
                 "568C3AE8-9EF4-4505-A6C9-82D3635736B7", // Bonus Maneuver Feat 9
                 "7C8B00CA-69D9-4F14-957B-1D9542A204DB" // Maneuver Mastery
@@ -43,6 +59,10 @@ namespace AcrobatPOC.Class
                 (17,
                 "568C3AE8-9EF4-4505-A6C9-82D3635736B7", // Bonus Maneuver Feat 9
                 "7C8B00CA-69D9-4F14-957B-1D9542A204DB" // Maneuver Mastery
+                )
+                .AddEntry
+                (18,
+                "95F5A426-8B4D-4F1D-AE7E-0B0C8813CC5F" //Specialty Maneuver
                 )
                 ;
 

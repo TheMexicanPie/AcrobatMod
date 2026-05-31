@@ -47,7 +47,7 @@ namespace AcrobatPOC.Class.Features
                         //FeatureRefs.DisarmingStrike.Reference.Get(),
                         FeatureRefs.FurysFall.Reference.Get()
                     ])
-                    //.SetRanks(2)
+                    //.SetRanks(3)
                     ;
 
             

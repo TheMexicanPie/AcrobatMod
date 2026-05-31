@@ -57,5 +57,63 @@
     {
         "Key": "ManeuverMasteryFeature.Description",
         "enGB": "At 1st level, an acrobat gets a +1 bonus to their CMB and CMD. That bonus increases by 1 at 5th level and every 4th level afterwards."
+    },
+
+    {
+        "Key": "SpecialtyManeuver.Name",
+        "ProcessTemplates": false,
+        "enGB": "Specialty Maneuver"
+    },
+
+    {
+        "Key": "SpecialtyManeuver.Description",
+        "enGB": "At 1st level and every 8th level afterward, an acrobat chooses a maneuver type to become their specialty. When performing a specialty maneuver, the acrobat's Maneuver Mastery bonus to CMB is doubled."
+    },
+
+    {
+        "Key": "SpecialtyManeuverBullRush.Name",
+        "ProcessTemplates": false,
+        "enGB": "Bull Rush"
+    },
+
+    {
+        "Key": "SpecialtyManeuverTrip.Name",
+        "ProcessTemplates": false,
+        "enGB": "Trip"
+    },
+
+    {
+        "Key": "SpecialtyManeuverDirtyTrick.Name",
+        "ProcessTemplates": false,
+        "enGB": "Dirty Trick"
+    },
+
+    {
+        "Key": "SpecialtyManeuverDisarm.Name",
+        "ProcessTemplates": false,
+        "enGB": "Disarm"
+    },
+
+    {
+        "Key": "SpecialtyManeuverGrapple.Name",
+        "ProcessTemplates": false,
+        "enGB": "Grapple"
+    },
+
+    {
+        "Key": "SpecialtyManeuverSunder.Name",
+        "ProcessTemplates": false,
+        "enGB": "Sunder Armor"
+    },
+
+    {
+        "Key": "OpportunisticManipulation.Name",
+        "ProcessTemplates": false,
+        "enGB": "Opportunistic Manipulation"
+    },
+
+    {
+        "Key": "OpportunisticManipulation.Description",
+        "enGB": "At 2nd level and every 3rd level afterwards, an acrobat gains one opportunistic manipulation.  An opportunistic manipulation can either be used as a standard action or be set as the acrobat's active manipulation. Whenever the acrobat misses a melee attack, they will perform their active manipulation against the attack's target. An acrobat can only perform one opportunistic manipulation per turn, further misses will have no effect.  Some opportunistic manipulations allow their target to make a saving throw, the DC of these saves is equal to 10 + half the acrobat's level + the acrobat's Charisma modifier."
     }
 ]
