@@ -39,7 +39,8 @@ namespace AcrobatPOC.Class.Features
                         //FeatureRefs.GreaterDirtyTrick.Reference.Get(),
                         FeatureRefs.ImprovedDisarm.Reference.Get(),
                         //FeatureRefs.GreaterDisarm.Reference.Get(),
-                        // add Grapple Feats
+                        "34CF93AC-0C65-410B-9FDA-5B9C90D2148D", //Improved Grapple
+                        // "0A250137-6ECA-49B8-939B-60843D96BA66", // Greater Grapple
                         FeatureRefs.ImprovedSunder.Reference.Get(),
                         //FeatureRefs.GreaterSunder.Reference.Get(),
                         FeatureRefs.ImprovedTrip.Reference.Get(),

@@ -38,16 +38,16 @@ using static Kingmaker.Designers.AbilitiesHelper;
 
 namespace AcrobatPOC.Class.Features.OpportunisticManipulations
 {
-    public static class OMRepel
+    public static class OMTumble
     {
-        private static readonly string FeatureName = "OMRepelFeature";
-        private static readonly string FeatureGuid = "20B3961E-2E41-4E28-8D85-8D8DD5961E53";
+        private static readonly string FeatureName = "OMTumbleFeature";
+        private static readonly string FeatureGuid = "2C88C2E1-A272-496E-A407-29255488F631";
 
-        private static readonly string AbilityName = "OMRepelAbility";
-        private static readonly string AbilityGuid = "4DF1CCE8-7C4A-4EF4-A786-BE7345B110BC";
+        private static readonly string AbilityName = "OMTumbleAbility";
+        private static readonly string AbilityGuid = "4AEFCECD-29C1-46D9-A358-14C886E886EC";
 
-        private static readonly string BuffName = "OMRepelBuff";
-        private static readonly string BuffGuid = "9AC5D269-1BE3-4C3A-8A7E-B7A8172E485A";
+        private static readonly string BuffName = "OMTumbleBuff";
+        private static readonly string BuffGuid = "2B58F745-B947-41D3-AE10-6FA229483084";
 
 
         public static void Configure()
@@ -59,7 +59,7 @@ namespace AcrobatPOC.Class.Features.OpportunisticManipulations
                 (
                     onlyHit: false, onMiss: true, rangeType: Kingmaker.Enums.WeaponRangeType.MeleeNormal,
                     action : ActionsBuilder.New()
-                        .CombatManeuver(onSuccess: null, type: CombatManeuver.BullRush)
+                        .CombatManeuver(onSuccess: null, type: CombatManeuver.Trip )
                 )
                 .Configure();
 
@@ -73,7 +73,7 @@ namespace AcrobatPOC.Class.Features.OpportunisticManipulations
             FeatureConfigurator.New(FeatureName, FeatureGuid)
                 .SetDisplayName(FeatureName + ".Name")
                 .SetDescription(FeatureName + ".Description")
-                .AddPrerequisiteFeature(FeatureRefs.ImprovedBullRush.Reference.Get())
+                .AddPrerequisiteFeature(FeatureRefs.ImprovedTrip.Reference.Get())
                 .AddFacts
                 ([
                     AbilityGuid

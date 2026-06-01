@@ -38,16 +38,16 @@ using static Kingmaker.Designers.AbilitiesHelper;
 
 namespace AcrobatPOC.Class.Features.OpportunisticManipulations
 {
-    public static class OMRepel
+    public static class OMKnockOff
     {
-        private static readonly string FeatureName = "OMRepelFeature";
-        private static readonly string FeatureGuid = "20B3961E-2E41-4E28-8D85-8D8DD5961E53";
+        private static readonly string FeatureName = "OMKnockOffFeature";
+        private static readonly string FeatureGuid = "AB36EF3B-D7D3-4089-A7D7-74701077F997";
 
-        private static readonly string AbilityName = "OMRepelAbility";
-        private static readonly string AbilityGuid = "4DF1CCE8-7C4A-4EF4-A786-BE7345B110BC";
+        private static readonly string AbilityName = "OMKnockOffAbility";
+        private static readonly string AbilityGuid = "32464A84-DED0-4CD9-A794-E4D519D501EC";
 
-        private static readonly string BuffName = "OMRepelBuff";
-        private static readonly string BuffGuid = "9AC5D269-1BE3-4C3A-8A7E-B7A8172E485A";
+        private static readonly string BuffName = "OMKnockOffBuff";
+        private static readonly string BuffGuid = "3DDFD7B5-C39A-41C4-9D69-7C8F4E199C27";
 
 
         public static void Configure()
@@ -59,7 +59,7 @@ namespace AcrobatPOC.Class.Features.OpportunisticManipulations
                 (
                     onlyHit: false, onMiss: true, rangeType: Kingmaker.Enums.WeaponRangeType.MeleeNormal,
                     action : ActionsBuilder.New()
-                        .CombatManeuver(onSuccess: null, type: CombatManeuver.BullRush)
+                        .CombatManeuver(onSuccess: null, type: CombatManeuver.Disarm)
                 )
                 .Configure();
 
@@ -73,7 +73,7 @@ namespace AcrobatPOC.Class.Features.OpportunisticManipulations
             FeatureConfigurator.New(FeatureName, FeatureGuid)
                 .SetDisplayName(FeatureName + ".Name")
                 .SetDescription(FeatureName + ".Description")
-                .AddPrerequisiteFeature(FeatureRefs.ImprovedBullRush.Reference.Get())
+                .AddPrerequisiteFeature(FeatureRefs.ImprovedDisarm.Reference.Get())
                 .AddFacts
                 ([
                     AbilityGuid

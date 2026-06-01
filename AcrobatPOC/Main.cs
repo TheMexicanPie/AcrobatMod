@@ -7,6 +7,7 @@ using Kingmaker.Blueprints.JsonSystem;
 using AcrobatPOC.Feats;
 using AcrobatPOC.Class;
 using AcrobatPOC.Class.Features;
+using AcrobatPOC.Class.Features.OpportunisticManipulations;
 
 namespace AcrobatPOC;
 
@@ -52,10 +53,15 @@ public static class Main {
                 Log.Log("Patching blueprints.");
 
                 //TestFeat.Configure();
+                ImprovedGrapple.Configure();
+                GreaterGrapple.Configure();
+
                 AcrobatProficiency.Configure();
                 AcrobatBonusFeatSelectionLevel1.Configure();
                 AcrobatBonusFeatSelectionLevel9.Configure();
                 ManeuverMastery.Configure();
+
+                OpportunisticManipulationSelection.Configure();
 
                 SpecialtyManeuverSelection.Configure();
 

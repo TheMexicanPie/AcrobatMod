@@ -60,9 +60,9 @@ namespace AcrobatPOC.Class
                 .SetMaleEquipmentEntities("eb4318c808dcb2e45a7184db61ab1c29", "cddd5bd766c85af40ab49d38eaf5bdea")
                 .SetFemaleEquipmentEntities("436762cf39551fb48a0c540430666c18", "7a1655ab75173f74a93b6b369618f013")
                 .SetDifficulty(3)
-                .SetRecommendedAttributes(Kingmaker.EntitySystem.Stats.StatType.Dexterity)
+                .SetRecommendedAttributes(Kingmaker.EntitySystem.Stats.StatType.Dexterity, Kingmaker.EntitySystem.Stats.StatType.Charisma)
                 .SetNotRecommendedAttributes(Kingmaker.EntitySystem.Stats.StatType.Strength)
-                .SetSignatureAbilities()
+                .SetSignatureAbilities("7C8B00CA-69D9-4F14-957B-1D9542A204DB", "95F5A426-8B4D-4F1D-AE7E-0B0C8813CC5F", "C596DF10-04A8-48D2-85F4-D10041585D51")
                
                 ;
 

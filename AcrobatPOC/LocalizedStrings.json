@@ -115,5 +115,159 @@
     {
         "Key": "OpportunisticManipulation.Description",
         "enGB": "At 2nd level and every 3rd level afterwards, an acrobat gains one opportunistic manipulation.  An opportunistic manipulation can either be used as a standard action or be set as the acrobat's active manipulation. Whenever the acrobat misses a melee attack, they will perform their active manipulation against the attack's target. An acrobat can only perform one opportunistic manipulation per turn, further misses will have no effect.  Some opportunistic manipulations allow their target to make a saving throw, the DC of these saves is equal to 10 + half the acrobat's level + the acrobat's Charisma modifier."
+    },
+
+    {
+        "Key": "OMRepelFeature.Name",
+        "ProcessTemplates": false,
+        "enGB": "Repel"
+    },
+
+    {
+        "Key": "OMRepelFeature.Description",
+        "enGB": "Using the distraction created by your failed attack, you try to push your opponent back.  You perform a bull rush combat maneuver against your target."
+    },
+
+    {
+        "Key": "OMMisdirectFeature.Name",
+        "ProcessTemplates": false,
+        "enGB": "Misdirect"
+    },
+
+    {
+        "Key": "OMMisdirectFeature.Description",
+        "enGB": "Using the distraction created by your failed attack, you try to hamper your opponent.  You perform a dirty trick combat maneuver against your target."
+    },
+
+    {
+        "Key": "OMMisdirectAbilitySicken.Name",
+        "ProcessTemplates": false,
+        "enGB": "Misdirect : Sicken"
+    },
+
+    {
+        "Key": "OMMisdirectAbilitySicken.Description",
+        "enGB": "Using the distraction created by your failed attack, you try to sicken your opponent.  You perform a sickening dirty trick combat maneuver against your target."
+    },
+
+    {
+        "Key": "OMMisdirectAbilityBlind.Name",
+        "ProcessTemplates": false,
+        "enGB": "Misdirect : Blind"
+    },
+
+    {
+        "Key": "OMMisdirectAbilityBlind.Description",
+        "enGB": "Using the distraction created by your failed attack, you try to blind your opponent.  You perform a blinding dirty trick combat maneuver against your target."
+    },
+
+    {
+        "Key": "OMMisdirectAbilityEntangle.Name",
+        "ProcessTemplates": false,
+        "enGB": "Misdirect : Entangle"
+    },
+
+    {
+        "Key": "OMMisdirectAbilityEntangle.Description",
+        "enGB": "Using the distraction created by your failed attack, you try to entangle your opponent.  You perform an entangling dirty trick combat maneuver against your target."
+    },
+
+    {
+        "Key": "OMKnockOffFeature.Name",
+        "ProcessTemplates": false,
+        "enGB": "Knock Off"
+    },
+
+    {
+        "Key": "OMKnockOffFeature.Description",
+        "enGB": "Using the distraction created by your failed attack, you try to disarm your opponent.  You perform a disarm combat maneuver against your target."
+    },
+
+    {
+        "Key": "OMDismantleFeature.Name",
+        "ProcessTemplates": false,
+        "enGB": "Dismantle"
+    },
+
+    {
+        "Key": "OMDismantleFeature.Description",
+        "enGB": "Using the distraction created by your failed attack, you try to peel off your opponents armor.  You perform a sunder armor maneuver against your target."
+    },
+
+    {
+        "Key": "OMTumbleFeature.Name",
+        "ProcessTemplates": false,
+        "enGB": "Tumble"
+    },
+
+    {
+        "Key": "OMTumbleFeature.Description",
+        "enGB": "Using the distraction created by your failed attack, you try to make your opponent fall.  You perform a trip combat maneuver against your target."
+    },
+
+    {
+        "Key": "ImprovedGrapple.Name",
+        "ProcessTemplates": false,
+        "enGB": "Grapple"
+    },
+
+    {
+        "Key": "ImprovedGrapple.Description",
+        "enGB": "This feat gives the character an ability to perform the grapple combat maneuver.  It also grants a +2 bonus to CMB when performing this maneuver and a +2 bonus to CMD when defending against it.  You can attempt to grapple a foe in melee as a standard action. If your combat maneuver is successful, both the target and you are grappled.  Grappled characters cannot move, take a -2 penalty on all attack rolls and a-4 penalty to Dexterity-based checks, cannot make attacks of opportunity, and whenever they cast a spell or use a spell-like ability, they must make a concentration check against a DC of 10 + the spell's level + the grappler's CM or lose the spell.  The target of the grapple attempts to escape every round by making a successful Athletics or Mobility skill check, or Strength check. The DC of this check is the grappler's CMD.  While grappling the target, the grappler cannot take standard actions.  Each round, the grappler makes a grapple maneuver check with a +5 circumstance bonus. On success, the target is pinned and takes damage equal to that of the grappler's attack with the highest damage dice. If the check fails this ends the grapple for both the grappler and the target.  As a free action, the grappler can end the grapple for both themselves and the target.   Pinned characters suffer the following penalties: Character suffers all of the penalties from being grappled. Character loses their Dexterity and dodge bonuses to AC. Character cannot take standard actions. Character suffers a -4 penalty to AC."
+    },
+
+    {
+        "Key": "ImprovedGrappleRelease.Name",
+        "ProcessTemplates": false,
+        "enGB": "Release Grapple"
+    },
+
+    {
+        "Key": "ImprovedGrappleRelease.Description",
+        "enGB": "Release your opponent and end both of your grappled states."
+    },
+
+    {
+        "Key": "GrappledBuff.Name",
+        "ProcessTemplates": false,
+        "enGB": "Grappled"
+    },
+
+    {
+        "Key": "GrappledBuff.Description",
+        "enGB": "This creature is grappled, taking a -2 to its attack rolls and a -4 to its Dexterity."
+    },
+
+    {
+        "Key": "GreaterGrappleFeat.Name",
+        "ProcessTemplates": false,
+        "enGB": "Greater Grapple"
+    },
+
+    {
+        "Key": "GreaterGrappleFeat.Description",
+        "enGB": "You receive a +2 bonus on checks made to attempt or maintain a grapple.  This bonus stacks with the bonus granted by Grapple.   While you are grappling someone, you can take attack for free at the beginning of each round."
+    },
+
+    {
+        "Key": "GreaterGrappleBuff.Name",
+        "ProcessTemplates": false,
+        "enGB": "Wailing"
+    },
+
+    {
+        "Key": "GreaterGrappleBuff.Description",
+        "enGB": "You are wailing on your grapple opponent, getting a free attack each round."
+    },
+
+    {
+        "Key": "OMRestrainFeature.Name",
+        "ProcessTemplates": false,
+        "enGB": "Restrain"
+    },
+
+    {
+        "Key": "OMRestrainFeature.Description",
+        "enGB": "Using the distraction created by your failed attack, you try to catch your opponent.  You perform a grapple combat maneuver against your target."
     }
 ]
