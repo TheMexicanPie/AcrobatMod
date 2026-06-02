@@ -49,6 +49,12 @@ namespace AcrobatPOC.Class.Features.OpportunisticManipulations
             OMTumble.Configure();
             OMMisdirect.Configure();
 
+            OMBefuddle.Configure();
+            OMAstonish.Configure();
+            OMStupefy.Configure();
+            OMSpook.Configure();
+            OMTerrify.Configure();
+
 
             FeatureSelectionConfigurator.New(FeatureName, FeatureGuid)
                 .SetDisplayName("OpportunisticManipulation.Name")
@@ -62,7 +68,13 @@ namespace AcrobatPOC.Class.Features.OpportunisticManipulations
                     "0B96C20B-47B2-421A-8CDB-251953EE7DF3", // Restrain
                     "7145A58D-BA36-4009-AF36-09CD278FE79D", // Dismantle
                     "2C88C2E1-A272-496E-A407-29255488F631", // Tumble
-                    "BFA02F63-1DEF-4E19-AD0D-41C36EFF18F5"  // Misdirect
+                    "BFA02F63-1DEF-4E19-AD0D-41C36EFF18F5", // Misdirect
+
+                    "BC522267-9C21-4D47-B085-9DF90536887D", // Befuddle
+                    "B203288F-118C-451C-8416-3289260BC98A", // Astonish
+                    "80F02A11-4464-4C3A-A326-B9ECCD097621", //Stupefy
+                    "B47EDADB-478E-4F7E-8052-1FECFE987A77", // Spook
+                    "770D50B1-47C5-4C8D-9B86-8E6EA7712506"  // Terrify
                     // Add Opportunistic Manipulations
                 ])
                 //.SetRanks(7)

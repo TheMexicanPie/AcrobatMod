@@ -22,8 +22,8 @@ namespace AcrobatPOC.Class
                 "A7E1F749-81D8-485A-A0BA-F300F18620DD", // Acrobat Proficiencies
                 FeatureRefs.AgileManeuvers.Reference.Get(),
                 "A735C5B7-6328-4442-A7F2-8F32D00ED6F8", // Bonus Maneuver Feat 1
-                "C596DF10-04A8-48D2-85F4-D10041585D51", //Opportunistic Manipulation TEMPORARY FOR TESTS
-                "C596DF10-04A8-48D2-85F4-D10041585D51", //Opportunistic Manipulation TEMPORARY FOR TESTS
+                /*"C596DF10-04A8-48D2-85F4-D10041585D51", //Opportunistic Manipulation TEMPORARY FOR TESTS
+                "C596DF10-04A8-48D2-85F4-D10041585D51", //Opportunistic Manipulation TEMPORARY FOR TESTS */
                 "7C8B00CA-69D9-4F14-957B-1D9542A204DB" // Maneuver Mastery
                 )
                 .AddEntry

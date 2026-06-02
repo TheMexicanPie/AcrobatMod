@@ -44,19 +44,19 @@ using static Kingmaker.Designers.AbilitiesHelper;
 
 namespace AcrobatPOC.Class.Features.OpportunisticManipulations
 {
-    public static class OMSpook
+    public static class OMTerrify
     {
-        private static readonly string FeatureName = "OMSpookFeature";
-        private static readonly string FeatureGuid = "B47EDADB-478E-4F7E-8052-1FECFE987A77";
+        private static readonly string FeatureName = "OMTerrifyFeature";
+        private static readonly string FeatureGuid = "770D50B1-47C5-4C8D-9B86-8E6EA7712506";
 
-        private static readonly string AbilityName = "OMSpookAbility";
-        private static readonly string AbilityGuid = "EB344A3C-B160-4253-B873-E58DF7F08476";
+        private static readonly string AbilityName = "OMTerrifyAbility";
+        private static readonly string AbilityGuid = "4BFEAF17-93BF-408D-93C7-6387B0F20465";
 
-        private static readonly string ActiveAbilityName = "OMSpookActiveAbility";
-        private static readonly string ActiveAbilityGuid = "06ADEAF7-6353-48ED-AD32-37BF229A4A5B";
+        private static readonly string ActiveAbilityName = "OMTerrifyActiveAbility";
+        private static readonly string ActiveAbilityGuid = "A92F569B-C071-405D-885D-61E91B72CE38";
 
-        private static readonly string BuffName = "OMSpookBuff";
-        private static readonly string BuffGuid = "A98B12CF-CF5D-42CF-ABA1-92E095928F58";
+        private static readonly string BuffName = "OMTerrifyBuff";
+        private static readonly string BuffGuid = "0F23D4A4-7903-4F24-A313-3E351C2B69AD";
 
 
         public static void Configure()
@@ -68,7 +68,7 @@ namespace AcrobatPOC.Class.Features.OpportunisticManipulations
                     (
                         ContextRankConfigs
                             .ClassLevel(["08636672-3547-4DC5-AE9B-BAA8DCF4164B"], false, AbilityRankType.SpeedBonus)
-                            .WithDiv2Progression()
+                            .WithDivStepProgression(4)
                     )
                 .AddContextCalculateAbilityParams(statType: Kingmaker.EntitySystem.Stats.StatType.Charisma)
                 .AddInitiatorAttackWithWeaponTrigger
@@ -85,7 +85,7 @@ namespace AcrobatPOC.Class.Features.OpportunisticManipulations
                                             .ApplyBuff
                                                 (
 
-                                                    BuffRefs.Shaken.Reference.Get(),
+                                                    BuffRefs.Frightened.Reference.Get(),
                                                     ContextDuration.Variable(ContextValues.Rank(AbilityRankType.SpeedBonus), DurationRate.Rounds)
                                                 )
 
@@ -109,7 +109,7 @@ namespace AcrobatPOC.Class.Features.OpportunisticManipulations
                     (
                         ContextRankConfigs
                             .ClassLevel(["08636672-3547-4DC5-AE9B-BAA8DCF4164B"], false,AbilityRankType.SpeedBonus)
-                            .WithDiv2Progression()
+                            .WithDivStepProgression(4)
                     )
                 
                 .AddContextCalculateAbilityParams(statType: Kingmaker.EntitySystem.Stats.StatType.Charisma)
@@ -126,7 +126,7 @@ namespace AcrobatPOC.Class.Features.OpportunisticManipulations
                                             .ApplyBuff
                                                 (
 
-                                                    BuffRefs.Shaken.Reference.Get(),
+                                                    BuffRefs.Frightened.Reference.Get(),
                                                     ContextDuration.Variable(ContextValues.Rank(AbilityRankType.SpeedBonus), DurationRate.Rounds)
                                                 )
 
@@ -146,21 +146,8 @@ namespace AcrobatPOC.Class.Features.OpportunisticManipulations
             FeatureConfigurator.New(FeatureName, FeatureGuid)
                 .SetDisplayName(FeatureName + ".Name")
                 .SetDescription(FeatureName + ".Description")
-                //.AddPrerequisiteFeature(FeatureRefs.ImprovedSunder.Reference.Get())
-                /*.AddIncreaseSpellDC
-                (
-                    value: ContextValues.Property(UnitProperty.StatBonusCharisma),
-                    spell: ActiveAbilityGuid,
-                    spellsOnly: false,
-                    useContextBonus: true
-                )
-                .AddIncreaseSpellDC
-                (
-                    value: ContextValues.Property(UnitProperty.StatBonusCharisma),
-                    spell: BuffGuid,
-                    spellsOnly: false,
-                    useContextBonus: true
-                )*/
+                .AddPrerequisiteFeature("B47EDADB-478E-4F7E-8052-1FECFE987A77")
+                .AddPrerequisiteClassLevel("08636672-3547-4DC5-AE9B-BAA8DCF4164B", 8)
                 .AddFacts
                 ([
                     AbilityGuid,

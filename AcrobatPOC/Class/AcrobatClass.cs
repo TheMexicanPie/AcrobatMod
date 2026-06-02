@@ -63,6 +63,7 @@ namespace AcrobatPOC.Class
                 .SetRecommendedAttributes(Kingmaker.EntitySystem.Stats.StatType.Dexterity, Kingmaker.EntitySystem.Stats.StatType.Charisma)
                 .SetNotRecommendedAttributes(Kingmaker.EntitySystem.Stats.StatType.Strength)
                 .SetSignatureAbilities("7C8B00CA-69D9-4F14-957B-1D9542A204DB", "95F5A426-8B4D-4F1D-AE7E-0B0C8813CC5F", "C596DF10-04A8-48D2-85F4-D10041585D51")
+                //.SetDefaultBuild()
                
                 ;
 

@@ -269,5 +269,115 @@
     {
         "Key": "OMRestrainFeature.Description",
         "enGB": "Using the distraction created by your failed attack, you try to catch your opponent.  You perform a grapple combat maneuver against your target."
+    },
+
+    {
+        "Key": "OMSpookFeature.Name",
+        "ProcessTemplates": false,
+        "enGB": "Spook"
+    },
+
+    {
+        "Key": "OMSpookFeature.Description",
+        "enGB": "Using the distraction created by your failed attack, you whisper threats of violence in your opponent's ear.  Your opponent becomes shaken for 1 round per 2 levels (Will negate)."
+    },
+
+    {
+        "Key": "OMSpookActiveAbility.Name",
+        "ProcessTemplates": false,
+        "enGB": "Spook : Standard Action"
+    },
+
+    {
+        "Key": "OMSpookActiveAbility.Description",
+        "enGB": "Use Spook as a Standard Action."
+    },
+
+    {
+        "Key": "OMTerrifyFeature.Name",
+        "ProcessTemplates": false,
+        "enGB": "Terrify"
+    },
+
+    {
+        "Key": "OMTerrifyFeature.Description",
+        "enGB": "Using the distraction created by your failed attack, you tell your opponent of the horrors you're going to make them suffer through.  Your opponent becomes frightened for 1 round per 4 levels (Will negate)."
+    },
+
+    {
+        "Key": "OMTerrifyActiveAbility.Name",
+        "ProcessTemplates": false,
+        "enGB": "Terrify : Standard Action"
+    },
+
+    {
+        "Key": "OMTerrifyActiveAbility.Description",
+        "enGB": "Use Terrify as a Standard Action."
+    },
+
+    {
+        "Key": "OMBefuddleFeature.Name",
+        "ProcessTemplates": false,
+        "enGB": "Befuddle"
+    },
+
+    {
+        "Key": "OMBefuddleFeature.Description",
+        "enGB": "Using the distraction created by your failed attack, you spin your opponent around, making them loose focus and balance.  Your target becomes confused for 1 round per 5 levels (Will negates)."
+    },
+
+    {
+        "Key": "OMBefuddleActiveAbility.Name",
+        "ProcessTemplates": false,
+        "enGB": "Befuddle : Standard Action"
+    },
+
+    {
+        "Key": "OMBefuddleActiveAbility.Description",
+        "enGB": "Use Befuddle as a Standard Action."
+    },
+
+    {
+        "Key": "OMAstonishFeature.Name",
+        "ProcessTemplates": false,
+        "enGB": "Astonish"
+    },
+
+    {
+        "Key": "OMAstonishFeature.Description",
+        "enGB": "Using the distraction created by your failed attack, you hit your opponent in the head.  Your target becomes stunned for 1 round per 5 levels (Fortitude negates)."
+    },
+
+    {
+        "Key": "OMAstonishActiveAbility.Name",
+        "ProcessTemplates": false,
+        "enGB": "Astonish : Standard Action"
+    },
+
+    {
+        "Key": "OMAstonishActiveAbility.Description",
+        "enGB": "Use Astonish as a Standard Action."
+    },
+
+    {
+        "Key": "OMStupefyFeature.Name",
+        "ProcessTemplates": false,
+        "enGB": "Stupefy"
+    },
+
+    {
+        "Key": "OMStupefyFeature.Description",
+        "enGB": "Using the distraction created by your failed attack, you quickly block your opponent's pressure points.  Your target becomes paralysed for 1 round per 9 levels (Fortitude negates)."
+    },
+
+    {
+        "Key": "OMStupefyActiveAbility.Name",
+        "ProcessTemplates": false,
+        "enGB": "Stupefy : Standard Action"
+    },
+
+    {
+        "Key": "OMStupefyActiveAbility.Description",
+        "enGB": "Use Stupefy as a Standard Action."
     }
 ]

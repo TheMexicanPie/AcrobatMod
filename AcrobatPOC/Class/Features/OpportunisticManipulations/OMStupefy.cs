@@ -44,19 +44,19 @@ using static Kingmaker.Designers.AbilitiesHelper;
 
 namespace AcrobatPOC.Class.Features.OpportunisticManipulations
 {
-    public static class OMSpook
+    public static class OMStupefy
     {
-        private static readonly string FeatureName = "OMSpookFeature";
-        private static readonly string FeatureGuid = "B47EDADB-478E-4F7E-8052-1FECFE987A77";
+        private static readonly string FeatureName = "OMStupefyFeature";
+        private static readonly string FeatureGuid = "80F02A11-4464-4C3A-A326-B9ECCD097621";
 
-        private static readonly string AbilityName = "OMSpookAbility";
-        private static readonly string AbilityGuid = "EB344A3C-B160-4253-B873-E58DF7F08476";
+        private static readonly string AbilityName = "OMStupefyAbility";
+        private static readonly string AbilityGuid = "B65E512B-71F2-42E8-BB66-4660C19A5D41";
 
-        private static readonly string ActiveAbilityName = "OMSpookActiveAbility";
-        private static readonly string ActiveAbilityGuid = "06ADEAF7-6353-48ED-AD32-37BF229A4A5B";
+        private static readonly string ActiveAbilityName = "OMStupefyActiveAbility";
+        private static readonly string ActiveAbilityGuid = "AA4D9828-8443-4FB3-9652-B3D0B4BC8ED9";
 
-        private static readonly string BuffName = "OMSpookBuff";
-        private static readonly string BuffGuid = "A98B12CF-CF5D-42CF-ABA1-92E095928F58";
+        private static readonly string BuffName = "OMStupefyBuff";
+        private static readonly string BuffGuid = "0E6CC398-5937-4374-AEDF-FDD41845D2F8";
 
 
         public static void Configure()
@@ -68,7 +68,7 @@ namespace AcrobatPOC.Class.Features.OpportunisticManipulations
                     (
                         ContextRankConfigs
                             .ClassLevel(["08636672-3547-4DC5-AE9B-BAA8DCF4164B"], false, AbilityRankType.SpeedBonus)
-                            .WithDiv2Progression()
+                            .WithDivStepProgression(9)
                     )
                 .AddContextCalculateAbilityParams(statType: Kingmaker.EntitySystem.Stats.StatType.Charisma)
                 .AddInitiatorAttackWithWeaponTrigger
@@ -77,7 +77,7 @@ namespace AcrobatPOC.Class.Features.OpportunisticManipulations
                     action : ActionsBuilder.New()
                         .SavingThrow
                         (
-                            Kingmaker.EntitySystem.Stats.SavingThrowType.Will,                            
+                            Kingmaker.EntitySystem.Stats.SavingThrowType.Fortitude,                            
                             onResult: ActionsBuilder.New()
                                 .ConditionalSaved
                                     (
@@ -85,7 +85,7 @@ namespace AcrobatPOC.Class.Features.OpportunisticManipulations
                                             .ApplyBuff
                                                 (
 
-                                                    BuffRefs.Shaken.Reference.Get(),
+                                                    BuffRefs.Paralyzed.Reference.Get(),
                                                     ContextDuration.Variable(ContextValues.Rank(AbilityRankType.SpeedBonus), DurationRate.Rounds)
                                                 )
 
@@ -109,7 +109,7 @@ namespace AcrobatPOC.Class.Features.OpportunisticManipulations
                     (
                         ContextRankConfigs
                             .ClassLevel(["08636672-3547-4DC5-AE9B-BAA8DCF4164B"], false,AbilityRankType.SpeedBonus)
-                            .WithDiv2Progression()
+                            .WithDivStepProgression(9)
                     )
                 
                 .AddContextCalculateAbilityParams(statType: Kingmaker.EntitySystem.Stats.StatType.Charisma)
@@ -118,7 +118,7 @@ namespace AcrobatPOC.Class.Features.OpportunisticManipulations
                     ActionsBuilder.New()
                         .SavingThrow
                         (
-                            Kingmaker.EntitySystem.Stats.SavingThrowType.Will,
+                            Kingmaker.EntitySystem.Stats.SavingThrowType.Fortitude,
                             onResult: ActionsBuilder.New()
                                 .ConditionalSaved
                                     (
@@ -126,7 +126,7 @@ namespace AcrobatPOC.Class.Features.OpportunisticManipulations
                                             .ApplyBuff
                                                 (
 
-                                                    BuffRefs.Shaken.Reference.Get(),
+                                                    BuffRefs.Paralyzed.Reference.Get(),
                                                     ContextDuration.Variable(ContextValues.Rank(AbilityRankType.SpeedBonus), DurationRate.Rounds)
                                                 )
 
@@ -146,21 +146,8 @@ namespace AcrobatPOC.Class.Features.OpportunisticManipulations
             FeatureConfigurator.New(FeatureName, FeatureGuid)
                 .SetDisplayName(FeatureName + ".Name")
                 .SetDescription(FeatureName + ".Description")
-                //.AddPrerequisiteFeature(FeatureRefs.ImprovedSunder.Reference.Get())
-                /*.AddIncreaseSpellDC
-                (
-                    value: ContextValues.Property(UnitProperty.StatBonusCharisma),
-                    spell: ActiveAbilityGuid,
-                    spellsOnly: false,
-                    useContextBonus: true
-                )
-                .AddIncreaseSpellDC
-                (
-                    value: ContextValues.Property(UnitProperty.StatBonusCharisma),
-                    spell: BuffGuid,
-                    spellsOnly: false,
-                    useContextBonus: true
-                )*/
+                .AddPrerequisiteFeature("B203288F-118C-451C-8416-3289260BC98A")
+                .AddPrerequisiteClassLevel("08636672-3547-4DC5-AE9B-BAA8DCF4164B", 14)
                 .AddFacts
                 ([
                     AbilityGuid,
