@@ -7,6 +7,8 @@ using BlueprintCore.Blueprints.CustomConfigurators.Classes.Selection;
 using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Abilities;
 using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Buffs;
 using BlueprintCore.Blueprints.References;
+using BlueprintCore.Conditions.Builder;
+using BlueprintCore.Conditions.Builder.ContextEx;
 using BlueprintCore.Utils.Types;
 using HarmonyLib;
 using Kingmaker.Blueprints;
@@ -60,6 +62,18 @@ namespace AcrobatPOC.Class.Features.OpportunisticManipulations
                     onlyHit: false, onMiss: true, rangeType: Kingmaker.Enums.WeaponRangeType.MeleeNormal,
                     action : ActionsBuilder.New()
                         .CombatManeuver(onSuccess: null, type: CombatManeuver.Disarm)
+                )
+                .AddInitiatorAttackWithWeaponTrigger
+                (
+                    onlyHit: true, rangeType: Kingmaker.Enums.WeaponRangeType.MeleeNormal, onlyOnFirstHit: true,
+                    action: ActionsBuilder.New()
+                        .Conditional
+                        (
+                            conditions: ConditionsBuilder.New()
+                                .CasterHasFact("C92D6486-4DDF-47B6-8FAD-C13ECAC68C10"),
+                            ifTrue: ActionsBuilder.New()
+                                .CombatManeuver(onSuccess: null, type: CombatManeuver.Disarm)
+                        )
                 )
                 .Configure();
 

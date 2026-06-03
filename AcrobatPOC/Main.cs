@@ -61,7 +61,9 @@ public static class Main {
                 AcrobatBonusFeatSelectionLevel9.Configure();
                 ManeuverMastery.Configure();
 
+                SuccessGuarantee.Configure();
                 OpportunisticManipulationSelection.Configure();
+                DualManipulations.Configure();
 
                 SpecialtyManeuverSelection.Configure();
 

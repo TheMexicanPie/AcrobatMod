@@ -8,6 +8,7 @@ using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Abilities;
 using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Buffs;
 using BlueprintCore.Blueprints.References;
 using BlueprintCore.Conditions.Builder;
+using BlueprintCore.Conditions.Builder.ContextEx;
 using BlueprintCore.Utils.Types;
 using HarmonyLib;
 using Kingmaker.Blueprints;
@@ -93,6 +94,33 @@ namespace AcrobatPOC.Class.Features.OpportunisticManipulations
                         )
 
                 )
+                .AddInitiatorAttackWithWeaponTrigger
+                (
+                    onlyHit: true, rangeType: Kingmaker.Enums.WeaponRangeType.MeleeNormal,
+                    action: ActionsBuilder.New()
+                        .Conditional
+                        (
+                            conditions: ConditionsBuilder.New()
+                                .CasterHasFact("C92D6486-4DDF-47B6-8FAD-C13ECAC68C10"),
+                            ifTrue: ActionsBuilder.New()
+                                .SavingThrow
+                                (
+                                    Kingmaker.EntitySystem.Stats.SavingThrowType.Will,
+                                    onResult: ActionsBuilder.New()
+                                        .ConditionalSaved
+                                            (
+                                                failed: ActionsBuilder.New()
+                                                    .ApplyBuff
+                                                        (
+
+                                                            BuffRefs.Shaken.Reference.Get(),
+                                                            ContextDuration.Variable(ContextValues.Rank(AbilityRankType.SpeedBonus), DurationRate.Rounds)
+                                                        )
+
+                                            )
+                                )
+                        )
+                )
                 .Configure();
 
 
@@ -111,7 +139,6 @@ namespace AcrobatPOC.Class.Features.OpportunisticManipulations
                             .ClassLevel(["08636672-3547-4DC5-AE9B-BAA8DCF4164B"], false,AbilityRankType.SpeedBonus)
                             .WithDiv2Progression()
                     )
-                
                 .AddContextCalculateAbilityParams(statType: Kingmaker.EntitySystem.Stats.StatType.Charisma)
                 .AddAbilityEffectRunAction
                 (

@@ -7,6 +7,8 @@ using BlueprintCore.Blueprints.CustomConfigurators.Classes.Selection;
 using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Abilities;
 using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Buffs;
 using BlueprintCore.Blueprints.References;
+using BlueprintCore.Conditions.Builder;
+using BlueprintCore.Conditions.Builder.ContextEx;
 using BlueprintCore.Utils.Types;
 using HarmonyLib;
 using Kingmaker.Blueprints;
@@ -67,6 +69,26 @@ namespace AcrobatPOC.Class.Features.OpportunisticManipulations
                                 (
                                     "27F6B436-34F9-4BD7-93AE-3467E2044629", // Grapple Initiator Buff
                                     "8FDEE8E1-5108-42A0-8246-253A018EA60F"  // Grapple Target Buff
+                                )
+                        )
+                ).AddInitiatorAttackWithWeaponTrigger
+                (
+                    onlyHit: true, rangeType: Kingmaker.Enums.WeaponRangeType.MeleeNormal, onlyOnFirstHit: true,
+                    action: ActionsBuilder.New()
+                        .Conditional
+                        (
+                            conditions: ConditionsBuilder.New()
+                                .CasterHasFact("C92D6486-4DDF-47B6-8FAD-C13ECAC68C10"),
+                            ifTrue: ActionsBuilder.New()
+                                .CombatManeuverCustom
+                                (
+                                    CombatManeuver.Grapple,
+                                    success: ActionsBuilder.New()
+                                        .Grapple
+                                        (
+                                            "27F6B436-34F9-4BD7-93AE-3467E2044629", // Grapple Initiator Buff
+                                            "8FDEE8E1-5108-42A0-8246-253A018EA60F"  // Grapple Target Buff
+                                        )
                                 )
                         )
                 )

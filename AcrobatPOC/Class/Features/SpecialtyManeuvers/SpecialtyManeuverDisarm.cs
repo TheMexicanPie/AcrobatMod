@@ -30,7 +30,7 @@ namespace AcrobatPOC.Features.SpecialtyManeuvers
                     ContextRankConfigs.ClassLevel(["08636672-3547-4DC5-AE9B-BAA8DCF4164B"], type : Kingmaker.Enums.AbilityRankType.Default)
                     .WithCustomProgression((4, 1), (8, 2), (12, 3), (16, 4), (17,5))
                 )
-                .AddCMBBonusForManeuver(maneuvers: [CombatManeuver.Disarm], value: ContextValues.Rank())
+                .AddCMBBonusForManeuver(maneuvers: [CombatManeuver.Disarm], value: ContextValues.Rank(), descriptor: Kingmaker.Enums.ModifierDescriptor.UntypedStackable)
                 .SetRanks(1)
                 .Configure();
         }

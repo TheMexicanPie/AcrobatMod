@@ -73,37 +73,37 @@
     {
         "Key": "SpecialtyManeuverBullRush.Name",
         "ProcessTemplates": false,
-        "enGB": "Bull Rush"
+        "enGB": "Specialty Maneuver : Bull Rush"
     },
 
     {
         "Key": "SpecialtyManeuverTrip.Name",
         "ProcessTemplates": false,
-        "enGB": "Trip"
+        "enGB": "Specialty Maneuver : Trip"
     },
 
     {
         "Key": "SpecialtyManeuverDirtyTrick.Name",
         "ProcessTemplates": false,
-        "enGB": "Dirty Trick"
+        "enGB": "Specialty Maneuver : Dirty Trick"
     },
 
     {
         "Key": "SpecialtyManeuverDisarm.Name",
         "ProcessTemplates": false,
-        "enGB": "Disarm"
+        "enGB": "Specialty Maneuver : Disarm"
     },
 
     {
         "Key": "SpecialtyManeuverGrapple.Name",
         "ProcessTemplates": false,
-        "enGB": "Grapple"
+        "enGB": "Specialty Maneuver : Grapple"
     },
 
     {
         "Key": "SpecialtyManeuverSunder.Name",
         "ProcessTemplates": false,
-        "enGB": "Sunder Armor"
+        "enGB": "Specialty Maneuver : Sunder Armor"
     },
 
     {
@@ -379,5 +379,27 @@
     {
         "Key": "OMStupefyActiveAbility.Description",
         "enGB": "Use Stupefy as a Standard Action."
+    },
+
+    {
+        "Key": "SuccessGuarantee.Name",
+        "ProcessTemplates": false,
+        "enGB": "Success Guarantee"
+    },
+
+    {
+        "Key": "SuccessGuarantee.Description",
+        "enGB": "At 9th level, an acrobat learns to find openings to perform their manipulations without having to capitalize on their own mistakes.  Whenever the acrobat hits with a melee attack, they will perform their active manipulation as if they had just missed their attack."
+    },
+
+    {
+        "Key": "DualManipulations.Name",
+        "ProcessTemplates": false,
+        "enGB": "Dual Manipulations"
+    },
+
+    {
+        "Key": "DualManipulations.Description",
+        "enGB": "At 15th level, an acrobat's talent for multitasking allows them to perform two manipulations at the same time.  The acrobat can now set two different opportunistic manipulations as active manipulations, whenever they should perform an active manipulation, they will perform both instead."
     }
 ]
